@@ -1,9 +1,10 @@
 import React from 'react';
+import Router from "./"
 
 const App = () => {
   return (
     <div>
-      <p>Pokemons</p>
+      <Router/>
     </div>
   );
 }
