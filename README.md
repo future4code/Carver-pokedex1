@@ -1,9 +1,10 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Cassiano Moura
+- João Paulo de Oliveira Júnior
+- José Augusto Moura
+- Pedro Henrique Duarte a Silva
 
 Link do Surge: www.link.com.br
 
