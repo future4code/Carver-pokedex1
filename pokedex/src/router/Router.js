@@ -1,16 +1,20 @@
 import React from "react"
-import { Route } from "react-router-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import Header from "../components/Header/Header";
+import DetailsPage from "../pages/DetailesPage/DetailsPage";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import HomePage from "../pages/HomePage/HomePage";
-import PokedexPage from "../page/PokedexPage/PokedexPage"
-import DetailPage from "../page/DetailPage/DetailPage"
-import ErrorPage from "../page/ErrorPage/ErrorPage"
+import PokedexPage from "../pages/PokedexPage/PokedexPage";
 
 
 
 const Router = () => {
     return (
     <BrowserRouter>
+    
+        <Header/>
+
         <Switch>
             <Route exact path="/">
                 <HomePage/>
@@ -19,7 +23,7 @@ const Router = () => {
                 <PokedexPage/>
             </Route>
             <Route exact path="/detail">
-                <DetailPage/>
+                <DetailsPage/>
             </Route>
             <Route>
                 <ErrorPage/>
