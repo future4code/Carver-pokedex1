@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/core';
 import theme from './constants/theme';
 import useRequestData from './hooks/useRequestData';
 import { PokemonContext } from './dataContext/PokemonContext';
+import { GlobalState } from './dataContext/GlobalContext/GlobalState';
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -17,16 +18,14 @@ body{
 
 const App = () => {
 
-  const pokeList = useRequestData([], 'https://pokeapi.co/api/v2/pokemon/1')
-
-  console.log(pokeList)
+  // const pokeList = useRequestData([], 'https://pokeapi.co/api/v2/pokemon/')
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle/>
-      <PokemonContext.Provider value={pokeList}>
+      <GlobalState>
       <Router/>
-      </PokemonContext.Provider>
+      </GlobalState>
     </ThemeProvider>
   );
 }

@@ -1,21 +1,21 @@
 import React, { useContext } from "react"
-import { PokemonContext } from "../../dataContext/PokemonContext";
+import CardPokemon from "../../components/PokemonCard/CardPokemon";
+import { GlobalContext } from "../../dataContext/GlobalContext/GlobalStateContext";
+import { ContainerHome} from './styled'
+
 
 const HomePage = () => {
-    const pokemons = useContext(PokemonContext)
+    const {pokeList} = useContext(GlobalContext)
 
-    const mappedPokemons = pokemons.results && pokemons.results.map((item) =>{
-        return <h1>{item.name}</h1>
+    const mappedPokemons = pokeList.results && pokeList.results.map((item) =>{
+        return( <CardPokemon name={item.name}/> )
     })
 
 
  return (
-     <div>
-         <h1>Home Page</h1>
-         <p>{pokemons.name}</p>
-         {/* <img src={pokemons.sprites.front_default}/> */}
+     <ContainerHome>
          {mappedPokemons}
-     </div>
+     </ContainerHome>
  )
 }
 

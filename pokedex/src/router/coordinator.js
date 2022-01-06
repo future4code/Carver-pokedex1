@@ -1,9 +1,9 @@
 export const goToPokedex = (history) => {
-    history.push('/')
+    history.push('/pokedex')
 }
 
-export const goToDetailPage = (history) => {
-    history.push('/detail')
+export const goToDetailPage = (history, name) => {
+    history.push(`/detail/${name}`)
 }
 
 export const goToHome = (history) => {
