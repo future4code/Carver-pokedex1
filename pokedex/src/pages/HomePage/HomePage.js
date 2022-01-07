@@ -7,8 +7,8 @@ import { ContainerHome} from './styled'
 const HomePage = () => {
     const {pokeList} = useContext(GlobalContext)
 
-    const mappedPokemons = pokeList.results && pokeList.results.map((item) =>{
-        return( <CardPokemon name={item.name}/> )
+    const mappedPokemons = pokeList.results && pokeList.results.map((item, index) =>{
+        return( <CardPokemon name={item.name} key={item.name} index={index}/> )
     })
 
 
