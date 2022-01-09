@@ -40,11 +40,11 @@ const CardPokemon = (props) => {
             <Typography>{poke.name && poke.name.toUpperCase()}</Typography>
             <DivButton>
                 {history.location.pathname === '/pokedex' ?
-                    <Button size={'small'} color={'primary'} variant="outlined" onClick={() => removePokemon(poke)}>Remove</Button>
+                    <Button size={'small'} color={'text'} variant="outlined" onClick={() => removePokemon(poke)}>Remove</Button>
                     :
-                    <Button size={'small'} color={'primary'} variant="outlined" onClick={() => addPokedex(poke, props.index)}>Adicionar</Button>
+                    <Button size={'small'} color={'text'} variant="outlined" onClick={() => addPokedex(poke, props.index)}>Adicionar</Button>
                 }
-                <Button size={'small'} color={'primary'} variant="outlined" onClick={() => goToDetailPage(history, props.name)}>Detalhes</Button>
+                <Button size={'small'} color={'text'} variant="outlined" onClick={() => goToDetailPage(history, props.name)}>Detalhes</Button>
             </DivButton>
         </CardContainer>
     )
