@@ -4,7 +4,6 @@ import { createGlobalStyle } from 'styled-components';
 import { ThemeProvider } from '@material-ui/core';
 import theme from './constants/theme';
 import useRequestData from './hooks/useRequestData';
-import { PokemonContext } from './dataContext/PokemonContext';
 import { GlobalState } from './dataContext/GlobalContext/GlobalState';
 
 const GlobalStyle = createGlobalStyle`
@@ -17,8 +16,6 @@ body{
 
 
 const App = () => {
-
-  // const pokeList = useRequestData([], 'https://pokeapi.co/api/v2/pokemon/')
 
   return (
     <ThemeProvider theme={theme}>

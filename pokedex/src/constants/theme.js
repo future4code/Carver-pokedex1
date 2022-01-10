@@ -4,11 +4,11 @@ import { neutralColor, primaryColor, segundaryColor } from "./colors";
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: segundaryColor,
+            main: primaryColor,
             contrastText: 'white'
         },
         secondary: {
-            main: segundaryColor
+            main: primaryColor
         },
         text:{
             primary: neutralColor

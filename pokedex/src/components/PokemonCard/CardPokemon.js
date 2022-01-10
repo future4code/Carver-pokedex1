@@ -37,7 +37,7 @@ const CardPokemon = (props) => {
     return (
         <CardContainer>
             <img src={poke.sprites && poke.sprites.front_default} />
-            <Typography>{poke.name && poke.name.toUpperCase()}</Typography>
+            <Typography variant={'h6'}>{poke.name && poke.name.toUpperCase()}</Typography>
             <DivButton>
                 {history.location.pathname === '/pokedex' ?
                     <Button size={'small'} color={'text'} variant="outlined" onClick={() => removePokemon(poke)}>Remove</Button>
