@@ -1,8 +1,3 @@
-# POKEDEX
-
-Nome dos integrantes: 
-- Cassiano Moura
-- Pedro Henrique Duarte a Silva
 
 # Projeto Pokedex 
 
