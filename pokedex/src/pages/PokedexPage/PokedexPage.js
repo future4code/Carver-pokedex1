@@ -1,3 +1,4 @@
+import { Typography } from "@material-ui/core";
 import React, { useContext } from "react"
 import CardPokemon from "../../components/PokemonCard/CardPokemon";
 import { GlobalContext } from "../../dataContext/GlobalContext/GlobalStateContext";
@@ -13,9 +14,12 @@ const PokedexPage = () => {
 
     return (
         <ContainerPagePokedex>
-            <h1>PokedexPage</h1>
+            <Typography variant={'h4'}>Sua Pokedex</Typography>
             <ContainerPokemons>
-            {mappedPokedex}
+            {mappedPokedex.length === 0 ? 
+            <Typography variant={'h3'}> Nenhum pokemon na pokedex :( </Typography> 
+            :
+            mappedPokedex}
             </ContainerPokemons>
         </ContainerPagePokedex>
     )

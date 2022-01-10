@@ -6,10 +6,7 @@ import { ContainerDetail, ContainerImg, ContainerMoves, ContainerOrg, ContainerO
 const DetailsPage = () => {
 
     const params = useParams()
-
     const poke = useRequestData({}, `https://pokeapi.co/api/v2/pokemon/${params.name}`)
-
-    console.log('aaa', poke)
 
 
     return (

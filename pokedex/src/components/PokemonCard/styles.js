@@ -22,7 +22,7 @@ export const DivButton = styled.div`
 button{
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #3169B2
     
 }`
