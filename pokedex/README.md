@@ -1,4 +1,3 @@
-
 # Projeto Pokedex 
 
 Status: Concluído. 
@@ -23,5 +22,3 @@ Foi utilizado o React.Js como framework do projeto, buscando exercitar e aplicar
 # Desenvolvido por 
 - Cassiano Moura 
 - Pedro Henrique Duarte
-- João Paulo de Oliveira Júnior
-- José Augusto Moura
